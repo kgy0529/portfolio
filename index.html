@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='Title' content='portfolio'>
+    <meta name='Subject' content='portfolio'>
+    <meta name='Keywords' content='portfolio'>
+    <meta name='Author' content='geunyoung'>
+    <meta name='Publisher' content='geunyoung'>
+    <meta name='Description' content='portfolio'>
+    <meta name='Author-Date' content='20240521'>
+
+    <!-- 접근성 텍스트(skip) 숨김 -->
+    <style>#skip{overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}</style>
+
+    <!-- 폰트어썸 -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <!-- 구글폰트 아이콘 -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0' />
+
+    <!-- CSS 리셋 -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css'>
+
+    <!-- 제이쿼리 -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
+
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 로컬 CSS -->
+    <link rel='stylesheet' href='./css/style.css'/>
+
+    <!-- 로컬 js -->
+    <script src='./js/script.js' defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="line line1"></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#aboutMe">ABOUT ME</a></li>
+                        <li><a href="#webProject">WEB PROJECT</a></li>
+                        <li><a href="#design">DESIGN</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="container">
+            <div class="main">
+                <div class="title">
+                    <h1>PORTFOLIO</h1>
+                    <h3>WEB PUBLISHER</h3>
+                </div>
+                <div class="diamond">
+                    <img src="./img/diamond.png" alt="하얀 다이아몬드" class="diamond1">
+                </div>
+                <div class="diamond">
+                    <img src="./img/diamond.png" alt="하얀 다이아몬드" class="diamond2">
+                </div>
+                <div class="diamond">
+                    <img src="./img/diamond.png" alt="하얀 다이아몬드" class="diamond3">
+                </div>
+            </div>
+            <div class="main-bottom">
+                <div class="mb-ab">
+                    <div class="year">2023-2024</div>
+                    <div class="line line2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutMe" id="aboutMe">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="content">
+                <div class="profileImg"></div>
+                <div class="Profile">
+                    <h3>PROFILE</h3>
+                    <ul>
+                        <li>NAME<span>김근영</span></li>
+                        <li>BIRTH<span>1997.05.29</span></li>
+                        <li>PHONE<span>010 7924 6927</span></li>
+                        <li>E-MAIL<span>x__x_23@naver.com</span></li>
+                    </ul>
+                </div>
+                <div class="Skills">
+                    <h3>SKILLS</h3>
+                    <ul>
+                        <li><img src="./img/Ps_icon.png" alt="포토샵 아이콘"></li>
+                        <li><img src="./img/AI_icon.png" alt="일러스트 아이콘"></li>
+                        <li><img src="./img/html_icon.png" alt="html 아이콘"></li>
+                        <li><img src="./img/css_icon.png" alt="css 아이콘" class="css"></li>
+                        <li><img src="./img/js_icon.png" alt="js 아이콘" class="js"></li>
+                        <li><img src="./img/React_icon.png" alt="react 아이콘" class="react"></li>
+                    </ul>
+                </div>
+                <div class="Education">
+                    <h3>EDUCATION</h3>
+                    <ul>
+                        <li>
+                            <span>2020.02</span>
+                            중부대학교 만화&middot;애니메이션학과 졸업
+                        </li>
+                        <li>
+                            <span>2020.07</span>
+                            태룬파이브컴퍼니 디자인 및 그림작업 3개월
+                        </li>
+                        <li>
+                            <span>2023.12</span>
+                            반응형 웹디자인 &amp; 프론트엔드 개발 과정 수료 5개월
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aboutMe-bottom">
+                <div class="aM-ab">
+                    <div class="subTitle">ABOUT ME</div>
+                    <div class="line line2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="webProject" id="webProject">
+        <div class="webProjectWrap">
+            <div class="container">
+                <h2>Web project</h2>
+                <!-- Slider main container -->
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="img img1">1</div>
+                            <div class="textWrap">
+                                <h4>문화포털 사이트</h4>
+                                <h5>Culture and Information Service</h5>
+                                <div class="swiperText">
+                                    TYPE<span>Fullpage Web</span>
+                                </div>
+                                <div class="swiperText">
+                                    TOOL<span>HTML, CSS, JS</span>
+                                </div>
+                                <div class="swiperText">
+                                    PAGE<span>Main page, Sub page 1</span>
+                                </div>
+                                <div class="swiperText">
+                                    기여도<span>100% 개인작업</span>
+                                </div>
+                                <button type="button" class="viewBtn viewBtn1"><a href="https://kgy0529.github.io/project01/" target="_blank">VIEW</a></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img img2">2</div>
+                            <div class="textWrap">
+                                <h4>뉴버드</h4>
+                                <h5>NEW BIRD</h5>
+                                <div class="swiperText">
+                                    TYPE<span>반응형</span>
+                                </div>
+                                <div class="swiperText">
+                                    TOOL<span>HTML, CSS, JS</span>
+                                </div>
+                                <div class="swiperText">
+                                    PAGE<span>Main page</span>
+                                </div>
+                                <div class="swiperText">
+                                    기여도<span>100% 개인작업</span>
+                                </div>
+                                <button type="button" class="viewBtn viewBtn2"><a href="https://kgy0529.github.io/project02/" target="_blank">VIEW</a></button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img img3">3</div>
+                            <div class="textWrap">
+                                <h4>에이치픽스</h4>
+                                <h5>HPIX</h5>
+                                <div class="swiperText">
+                                    TYPE<span>Fullpage Web</span>
+                                </div>
+                                <div class="swiperText">
+                                    TOOL<span>HTML, SCSS, JS, React</span>
+                                </div>
+                                <div class="swiperText">
+                                    PAGE<span>Main page</span>
+                                </div>
+                                <div class="swiperText">
+                                    기여도<span>100% 개인작업</span>
+                                </div>
+                                <button type="button" class="viewBtn viewBtn3"><a href="https://kgy0529.github.io/project03/" target="_blank">VIEW</a></button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- 페이징 필요시 추가 -->
+                    <div class="swiper-pagination"></div>
+                    <!-- 이전, 다음 버튼 필요시 추가 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> 
+                <div class="webProject-bottom">
+                    <div class="wP-ab">
+                        <div class="subTitle">WEB PROJECT</div>
+                        <div class="line line2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="design" id="design">
+        <div class="container">
+            <h2>DESIGN</h2>
+           <div class="designImg">
+                <div class="banner banner1" onclick="toggleClickShow()">
+                    <img src="./img/cosmetics.png" alt="유채꿀립밤">
+                </div>
+                <div class="banner banner2">
+                    <img src="./img/cafeMenu.png" alt="카페신메뉴">
+                </div>
+                <div class="page page1">
+                    <img src="./img/page1-2.png" alt="상세페이지1">
+                </div>
+                <div class="page page2">
+                    <img src="./img/page1-2.png" alt="상세페이지1">
+                </div>
+           </div>
+        </div>
+    </section>
+
+</body>
+</html>
