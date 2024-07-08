@@ -410,15 +410,54 @@ header .container nav .menu ul li a:hover {
 .design .container .designImg .banner.banner2 {
   margin-top: 20px;
 }
-.design .container .designImg .banner img {
+.design .container .designImg .banner .img-container {
+  position: relative;
   width: 250px;
   height: 250px;
   margin-left: 200px;
-  filter: grayscale(100%);
+}
+.design .container .designImg .banner .img-container img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  filter: brightness(100%) grayscale(0%);
   transition: all 0.5s ease;
 }
-.design .container .designImg .banner img:hover {
-  filter: grayscale(0%);
+.design .container .designImg .banner .img-container::after {
+  content: "";
+  display: block;
+  background: url(../img/clickIcon.png) no-repeat center center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+.design .container .designImg .banner .img-container::before {
+  z-index: 999;
+  content: "Click";
+  position: absolute;
+  bottom: 75px;
+  left: 51%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Pretendard";
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+.design .container .designImg .banner .img-container:hover::after, .design .container .designImg .banner .img-container:hover::before {
+  opacity: 1;
+}
+.design .container .designImg .banner .img-container:hover img {
+  filter: brightness(50%) grayscale(100%);
   transform: scale(1.05);
 }
 .design .container .designImg .page {
@@ -432,13 +471,224 @@ header .container nav .menu ul li a:hover {
   top: 0;
   left: 810px;
 }
-.design .container .designImg .page img {
+.design .container .designImg .page .img-container {
+  position: relative;
   width: 300px;
   height: 523px;
-  filter: grayscale(100%);
+}
+.design .container .designImg .page .img-container img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(100%) grayscale(0%);
   transition: all 0.5s ease;
 }
-.design .container .designImg .page img:hover {
-  filter: grayscale(0%);
+.design .container .designImg .page .img-container::after {
+  content: "";
+  display: block;
+  background: url(../img/clickIcon.png) no-repeat center center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+.design .container .designImg .page .img-container::before {
+  z-index: 999;
+  content: "Click";
+  position: absolute;
+  bottom: 210px;
+  left: 51%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Pretendard";
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+.design .container .designImg .page .img-container:hover::after, .design .container .designImg .page .img-container:hover::before {
+  opacity: 1;
+}
+.design .container .designImg .page .img-container:hover img {
+  filter: brightness(50%) grayscale(100%);
   transform: scale(1.05);
+}
+.design .container .design-bottom {
+  position: relative;
+}
+.design .container .design-bottom .d-ab .subTitle {
+  position: absolute;
+  bottom: -140px;
+  left: -200px;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Pretendard";
+  font-weight: 300;
+  transition: font-weight 0.5s ease;
+}
+.design .container .design-bottom .d-ab .subTitle:hover {
+  font-weight: 500;
+}
+.design .container .design-bottom .d-ab .line2 {
+  position: absolute;
+  bottom: -140px;
+  right: -309px;
+  width: 500px;
+  box-shadow: 0 0 0 0.5px #fff;
+}
+.design .bgWrap1 {
+  position: relative;
+  width: 1900px;
+  height: 1080px;
+  top: -1080px;
+  display: none;
+}
+.design .bgWrap1 .bg1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.design .bgWrap1 .bg1 .bg-img {
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+.design .bgWrap1 .bg1 .bg-img h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.design .bgWrap1 .bg1 .bg-img button {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 475px;
+  background: url(../img/X_icon.png) no-repeat 0 0/cover;
+  border: none;
+}
+.design .bgWrap1 .bg1 .bg-img img {
+  width: 500px;
+  height: 500px;
+}
+.design .bgWrap2 {
+  position: relative;
+  width: 1900px;
+  height: 1080px;
+  top: -1080px;
+  display: none;
+}
+.design .bgWrap2 .bg2 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.design .bgWrap2 .bg2 .bg-img {
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+.design .bgWrap2 .bg2 .bg-img h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.design .bgWrap2 .bg2 .bg-img button {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 475px;
+  background: url(../img/X_icon.png) no-repeat 0 0/cover;
+  border: none;
+}
+.design .bgWrap2 .bg2 .bg-img img {
+  width: 500px;
+  height: 500px;
+}
+.design .bgWrap3 {
+  position: relative;
+  width: 1900px;
+  height: 1080px;
+  top: -1080px;
+  display: none;
+}
+.design .bgWrap3 .bg3 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.design .bgWrap3 .bg3 .bg-img {
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  left: 700px;
+}
+.design .bgWrap3 .bg3 .bg-img h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.design .bgWrap3 .bg3 .bg-img button {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 490px;
+  background: url(../img/X_icon.png) no-repeat 0 0/cover;
+  border: none;
+}
+.design .bgWrap3 .bg3 .bg-img .imgWrap {
+  height: 700px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.design .bgWrap3 .bg3 .bg-img .imgWrap img {
+  width: 500px;
+}
+.design .bgWrap4 {
+  position: relative;
+  width: 1900px;
+  height: 1080px;
+  top: -1080px;
+  display: none;
+}
+.design .bgWrap4 .bg4 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.design .bgWrap4 .bg4 .bg-img {
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  left: 700px;
+}
+.design .bgWrap4 .bg4 .bg-img h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.design .bgWrap4 .bg4 .bg-img button {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 490px;
+  background: url(../img/X_icon.png) no-repeat 0 0/cover;
+  border: none;
+}
+.design .bgWrap4 .bg4 .bg-img .imgWrap {
+  height: 700px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.design .bgWrap4 .bg4 .bg-img .imgWrap img {
+  width: 500px;
 }/*# sourceMappingURL=style.css.map */

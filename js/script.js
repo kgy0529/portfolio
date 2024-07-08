@@ -60,15 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     animateLine(line1, 2000); // 2초 동안 애니메이션
     animateLine(line2, 2000); // 2초 동안 애니메이션
-});
-
-//회전 다이아몬드 + 아마도 뺄거같음
-window.onload = function() {
-    const diamonds = document.querySelectorAll('.diamond img');
-    diamonds.forEach(img => {
-        img.classList.add('spin');
-    });
-};
+});;
 
 //스와이퍼
 var swiper = new Swiper(".mySwiper", {
@@ -83,22 +75,43 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
-// 디자인 클릭이벤트
-// function toggleClickShow() {
-//     var clickShow = document.querySelector('.clickShow');
-//     clickShow.style.display = (clickShow.style.display === 'none' || clickShow.style.display === '') ? 'block' : 'none';
-    
-//     var img1 = document.querySelector('.img.img1');
-//     img1.style.display = 'block';
-// }
+  //클릭이벤트1
+  function showBgWrap1() {
+    var bgWrap = document.querySelector('.bgWrap1');
+    bgWrap.style.display = 'block';
+}
 
-//close 버튼
-// document.addEventListener('DOMContentLoaded', function() {
-//     var closeBtns = document.querySelectorAll('.closeBtn');
-//     closeBtns.forEach(function(btn) {
-//         btn.addEventListener('click', function() {
-//             var clickShow = document.querySelector('.clickShow');
-//             clickShow.style.display = 'none';
-//         });
-//     });
-// });
+function hideBgWrap1() {
+    var bgWrap = document.querySelector('.bgWrap1');
+    bgWrap.style.display = 'none';
+}
+  //클릭이벤트2
+  function showBgWrap2() {
+    var bgWrap = document.querySelector('.bgWrap2');
+    bgWrap.style.display = 'block';
+}
+
+function hideBgWrap2() {
+    var bgWrap = document.querySelector('.bgWrap2');
+    bgWrap.style.display = 'none';
+}
+  //클릭이벤트3
+  function showBgWrap3() {
+    var bgWrap = document.querySelector('.bgWrap3');
+    bgWrap.style.display = 'block';
+}
+
+function hideBgWrap3() {
+    var bgWrap = document.querySelector('.bgWrap3');
+    bgWrap.style.display = 'none';
+}
+  //클릭이벤트4
+  function showBgWrap4() {
+    var bgWrap = document.querySelector('.bgWrap4');
+    bgWrap.style.display = 'block';
+}
+
+function hideBgWrap4() {
+    var bgWrap = document.querySelector('.bgWrap4');
+    bgWrap.style.display = 'none';
+}

@@ -224,22 +224,73 @@
     <section class="design" id="design">
         <div class="container">
             <h2>DESIGN</h2>
-           <div class="designImg">
-                <div class="banner banner1" onclick="toggleClickShow()">
-                    <img src="./img/cosmetics.png" alt="유채꿀립밤">
+            <div class="designImg">
+                <div class="banner banner1">
+                    <div class="img-container">
+                        <img src="./img/cosmetics.png" alt="유채꿀립밤" onclick="showBgWrap1()">
+                    </div>
                 </div>
                 <div class="banner banner2">
-                    <img src="./img/cafeMenu.png" alt="카페신메뉴">
+                    <div class="img-container">
+                        <img src="./img/cafeMenu.png" alt="카페신메뉴" onclick="showBgWrap2()">
+                    </div>
                 </div>
                 <div class="page page1">
-                    <img src="./img/page1-2.png" alt="상세페이지1">
+                    <div class="img-container">
+                        <img src="./img/page1-2.png" alt="상세페이지1" onclick="showBgWrap3()">
+                    </div>
                 </div>
                 <div class="page page2">
-                    <img src="./img/page1-2.png" alt="상세페이지1">
+                    <div class="img-container">
+                        <img src="./img/page2-2.png" alt="상세페이지1" onclick="showBgWrap4()">
+                    </div>
                 </div>
-           </div>
+            </div>
+            <div class="design-bottom">
+                <div class="d-ab">
+                    <div class="subTitle">Design</div>
+                    <div class="line line2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bgWrap1">
+            <div class="bg1">
+                <div class="bg-img">
+                    <h3>유채꿀립밤 / 배너</h3>
+                    <button type="button" class="bg-closeBtn" onclick="hideBgWrap1()"></button>
+                    <img src="./img/cosmetics.png" alt="유채꿀립밤 더 크게">
+                </div>
+            </div>
+        </div>
+        <div class="bgWrap2">
+            <div class="bg2">
+                <div class="bg-img">
+                    <h3>카페신메뉴 / 배너</h3>
+                    <button type="button" class="bg-closeBtn" onclick="hideBgWrap2()"></button>
+                    <img src="./img/cafeMenu.png" alt="카페신메뉴 더 크게">
+                </div>
+            </div>
+        </div>
+        <div class="bgWrap3">
+            <div class="bg3">
+                <div class="bg-img">
+                    <h3>라라스윗 저당초코바 / 상세페이지</h3>
+                    <button type="button" class="bg-closeBtn" onclick="hideBgWrap3()"></button>
+                    <div class="imgWrap"><img src="./img/page1-1.png" alt="라라스윗저당초코바 더 자세히"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bgWrap4">
+            <div class="bg4">
+                <div class="bg-img">
+                    <h3>센트룸 멀티 구미 / 상세페이지</h3>
+                    <button type="button" class="bg-closeBtn" onclick="hideBgWrap4()"></button>
+                    <div class="imgWrap"><img src="./img/page2-1.png" alt="센트룸멀티구미 더 자세히"></div>
+                </div>
+            </div>
         </div>
     </section>
+    
 
 </body>
 </html>
